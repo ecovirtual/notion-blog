@@ -1,10 +1,7 @@
-<p align="center">
-  <a href="https://transitivebullsh.it/nextjs-notion-starter-kit">
-    <img alt="Example article page" src="https://user-images.githubusercontent.com/552829/160132094-12875e09-41ec-450a-80fc-ae8cd488129d.jpg" width="689">
-  </a>
-</p>
 
-# Next.js Notion Starter Kit
+# Ramiro Writes Tech - Blog
+
+### Based on NextJS Notion Starter Kit
 
 > The perfect starter kit for building websites with Next.js and Notion.
 
@@ -12,7 +9,7 @@
 
 ## Intro
 
-This repo is what I use to power my personal blog and portfolio site [transitivebullsh.it](https://transitivebullsh.it).
+This repo is what I use to power my personal blog and portfolio site [ramirotech.blog](https://ramirotech.blog).
 
 It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notion-x), [Next.js](https://nextjs.org/), and [Vercel](https://vercel.com).
 
@@ -34,7 +31,7 @@ It uses Notion as a CMS, [react-notion-x](https://github.com/NotionX/react-notio
 ## Demos
 
 - [Default demo](https://nextjs-notion-starter-kit.transitivebullsh.it) - Deployed from the `main` branch
-- [My site](https://transitivebullsh.it) - Deployed from the `transitive-bullshit` branch
+- [My site](https://ramirotech.blog) - Deployed from the `main` branch
 
 ## Setup
 
@@ -111,16 +108,6 @@ Every notion block gets its own unique classname, so you can target individual b
 }
 ```
 
-## Dark Mode
-
-<p align="center">
-  <img alt="Light Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83ea9f0f-4761-4c0b-b53e-1913627975fc%2Ftransitivebullsh.it_-opt.jpg?table=block&id=ed7e8f60-c6d1-449e-840b-5c7762505c44&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark Mode" src="https://transitive-bs.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc0839d6c-7141-48df-8afd-69b27fed84aa%2Ftransitivebullsh.it__(1)-opt.jpg?table=block&id=23b11fe5-d6df-422d-9674-39cf7f547523&spaceId=fde5ac74-eea3-4527-8f00-4482710e1af3&width=2000&userId=&cache=v2" width="45%">
-</p>
-
-Dark mode is fully supported and can be toggled via the sun / moon icon in the footer.
-
 ## Automatic Social Images
 
 <p align="center">
@@ -133,54 +120,14 @@ Social images are generated automatically using [Vercel OG Image Generation](htt
 
 You can view an example social image live in production [here](https://transitivebullsh.it/api/social-image?id=dfc7f709-ae3e-42c6-9292-f6543d5586f0).
 
-## Automatic Table of Contents
-
-<p align="center">
-  <img alt="Smooth ToC Scrollspy" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcb2df62d-9028-440b-964b-117711450921%2Ftoc2.gif?table=block&id=d7e9951b-289c-4ff2-8b82-b0a61fe260b1&cache=v2" width="240">
-</p>
-
-By default, every article page will have a table of contents displayed as an `aside` on desktop. It uses **scrollspy** logic to automatically update the current section as the user scrolls through your document, and makes it really easy to jump between different sections.
-
-If a page has less than `minTableOfContentsItems` (default 3), the table of contents will be hidden. It is also hidden on the index page and if the browser window is too small.
-
-This table of contents uses the same logic that Notion uses for its built-in Table of Contents block (see [getPageTableOfContents](https://github.com/NotionX/react-notion-x/blob/master/packages/notion-utils/src/get-page-table-of-contents.ts) for the underlying logic).
-
-## Responsive
-
-<p align="center">
-  <img alt="Mobile article page" src="https://user-images.githubusercontent.com/552829/160132983-c2dd5830-80b3-4a0e-a8f1-abab5dbeed11.jpg" width="300">
-</p>
-
-All pages are designed to be responsive across common device sizes.
-
-## Analytics
-
-Analytics are an optional feature that are easy to enable if you want.
-
-### Fathom Analytics
-
-[Fathom](https://usefathom.com/ref/42TFOZ) provides a lightweight alternative to Google Analytics.
-
-To enable, just add a `NEXT_PUBLIC_FATHOM_ID` environment variable, which will only be used in production.
-
-### PostHog Analytics
-
-[PostHog](https://posthog.com/) provides a lightweight, **open source** alternative to Google Analytics.
-
-To enable, just add a `NEXT_PUBLIC_POSTHOG_ID` environment variable, which will only be used in production.
-
 ## Environment Variables
 
 If you're using Redis, analytics, or any other feature which requires environment variables, then you'll need to [add them to your Vercel project](https://vercel.com/docs/concepts/projects/environment-variables).
 
 If you want to test your redis builds with GitHub Actions, then you'll need to edit the [default build action](./.github/workflows/build.yml) to add `REDIS_HOST` and `REDIS_PASSWORD`. Here is an [example from my personal branch](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/blob/transitive-bullshit/.github/workflows/build.yml#L17-L21). You'll also need to add these environment variables to your GitHub repo as [repository secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 
-## Contributing
-
-See the [contribution guide](contributing.md) and join our amazing list of [contributors](https://github.com/transitive-bullshit/nextjs-notion-starter-kit/graphs/contributors)!
-
 ## License
 
-MIT © [Travis Fischer](https://transitivebullsh.it)
+MIT © [Ramiro Ramirez](https://ramirotech.blog)
 
-Support my open source work by <a href="https://twitter.com/transitive_bs">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
+Support my open source work by <a href="https://twitter.com/eco_virtual">following me on twitter <img src="https://storage.googleapis.com/saasify-assets/twitter-logo.svg" alt="twitter" height="24px" align="center"></a>
